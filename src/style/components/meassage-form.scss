@@ -1,0 +1,57 @@
+.meassage-form {
+  position: relative;
+  top: 3px;
+  margin-right: -15px;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: $white;
+  border-radius: 2px;
+  box-shadow: 0 0 57px rgba(20, 20, 21, 0.2);
+  text-align: center;
+
+  .form-control {
+    margin-bottom: 25px;
+    padding-left: 0;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    border-bottom: 1px solid $black;
+    border-bottom-color: rgba($black, 0.22);
+    box-shadow: none;
+    opacity: 0.6;
+    color: $black;
+    font-size: 15px;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-bottom-color: rgba($accent, 0.7);
+    }
+  }
+
+  textarea.form-control {
+    height: 95px;
+    resize: none;
+  }
+
+}
+.meassage-form__title {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #211a18;
+  font-weight: 400;
+  opacity: 0.9;
+  text-transform: capitalize;
+
+  span {
+    color: #ff5c36;
+    font-weight: 600;
+  }
+}

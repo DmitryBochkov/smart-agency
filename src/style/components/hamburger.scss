@@ -1,0 +1,13 @@
+$hamburger-padding-x                       : 0;
+$hamburger-padding-y                       : 0;
+$hamburger-layer-width                     : 34px;
+$hamburger-layer-spacing                   : 4px;
+$hamburger-layer-color                     : $dark;
+$hamburger-layer-color                     : rgba($dark, 0.7);
+$hamburger-layer-border-radius             : 2px;
+$hamburger-hover-opacity                   : 0.8;
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+.hamburger {
+  float: right;
+}

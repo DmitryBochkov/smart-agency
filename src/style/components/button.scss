@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  height: 55px;
+  width: 228px;
+  margin: 0 auto;
+  border: 1px solid rgba(1, 2, 2, 0.07);
+  border-radius: 27px;
+  box-shadow: 2px 11px 20px rgba(20, 20, 21, 0.08);
+  background-color: $white;
+  color: $black;
+  color: rgba($black, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+
+  &--accent {
+    width: 240px;
+    height: 57px;
+    background-color: #ff5c36;
+    color: $white;
+  }
+}

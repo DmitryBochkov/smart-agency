@@ -1,0 +1,12 @@
+/*custom base*/
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  color: $text-color;
+  background-color: $body-bg;
+}
+
+a.current {
+  cursor: default;
+}
