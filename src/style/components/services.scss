@@ -1,0 +1,26 @@
+#services {
+  padding-top: 125px;
+  padding-bottom: 175px;
+}
+
+.services-tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-tab {
+  width: 104px;
+  height: 92px;
+  position: relative;
+  margin-bottom: 7px;
+  background-color: #fbfbfb;
+  border-radius: 2px;
+  box-shadow: 0 0 0 rgba(20, 20, 21, 0.07);
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
