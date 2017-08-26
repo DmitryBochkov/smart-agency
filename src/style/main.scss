@@ -1,6 +1,9 @@
 // bootstrap
 @import "bootstrap";
 
+//fontawesome
+@import "fontawesome/font-awesome";
+
 //base
 @import "fonts";
 @import "style-vars";
@@ -14,3 +17,7 @@
 @import "components/hamburger";
 @import "components/meassage-form";
 @import "components/button";
+@import "components/section-heading";
+@import "components/process";
+@import "components/process-step";
+@import "components/plus-sign";
