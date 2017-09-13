@@ -13,10 +13,14 @@
   width: 104px;
   height: 92px;
   position: relative;
+  padding-top: 20px;
   margin-bottom: 7px;
+  overflow: hidden;
   border-radius: 2px;
   text-align: center;
   background-color: $white;
+  box-shadow: 0 0 0 rgba(20, 20, 21, 0.07);
+  transition: 0.25s;
 
   img {
     display: inline-block;
@@ -24,7 +28,7 @@
 
   &:hover {
     background-color: #fbfbfb;
-    box-shadow: 0 0 0 rgba(20, 20, 21, 0.07);
+    box-shadow: 0 0 36px rgba(20, 20, 21, 0.2);
   }
 }
 
@@ -62,7 +66,7 @@
     @media (min-width: $screen-sm-min) {
       margin: 0;
       float: right;
-    }    
+    }
   }
 
 }
