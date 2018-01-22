@@ -250,29 +250,30 @@
 
         <div class="row">
           <div class="col-md-2">
-            <ul class="services-tabs">
-              <li class="services-tab">
-                <img src="img/tab-icon-1.png" alt="Tab Icon 1">
+            <ul class="services-tabs" role="tablist">
+              <li role="presentation" class="services-tab active">
+                <a href="#app-design" aria-controls="home" role="tab" data-toggle="tab"><img src="img/tab-icon-1.png" alt="Tab Icon 1"></a>
               </li>
-              <li class="services-tab">
-                <img src="img/tab-icon-2.png" alt="Tab Icon 2">
+              <li role="presentation" class="services-tab">
+                <a href="#app-dev" aria-controls="home" role="tab" data-toggle="tab"><img src="img/tab-icon-2.png" alt="Tab Icon 2"></a>
               </li>
-              <li class="services-tab">
-                <img src="img/tab-icon-3.png" alt="Tab Icon 3">
+              <li role="presentation" class="services-tab">
+                <a href="#web-design" aria-controls="home" role="tab" data-toggle="tab"><img src="img/tab-icon-3.png" alt="Tab Icon 3"></a>
               </li>
-              <li class="services-tab">
-                <img src="img/tab-icon-4.png" alt="Tab Icon 4">
+              <li role="presentation" class="services-tab">
+                <a href="#web-dev" aria-controls="home" role="tab" data-toggle="tab"><img src="img/tab-icon-4.png" alt="Tab Icon 4"></a>
               </li>
             </ul>
           </div>
           <div class="col-md-10">
-            <div class="services-content">
-              <article class="services-pane">
+            <div class="services-content tab-content">
+
+              <article id="app-design" role="tabpanel" class="services-pane tab-pane active">
                 <div class="row">
                   <div class="col-sm-8 col-lg-7">
                     <h3 class="services-pane__title">Modern App Design</h3>
                     <div class="services-pane__content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, totam ad sint error porro. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
                       <p>vitae eveniet quam rem unde facilis.</p>
                     </div>
@@ -285,10 +286,134 @@
                   </div>
                 </div>
               </article>
+
+              <article id="app-dev" role="tabpanel" class="services-pane tab-pane">
+                <div class="row">
+                  <div class="col-sm-8 col-lg-7">
+                    <h3 class="services-pane__title">Modern App Dev</h3>
+                    <div class="services-pane__content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                      <p>vitae eveniet quam rem unde facilis, totam ad sint error porro.</p>
+                    </div>
+                    <button class="button button--servies"><span class="plus-sign"></span>Know More</button>
+                  </div>
+                  <div class="col-sm-4  col-lg-5">
+                    <div class="services-pane__image">
+                      <img class="img-responsive" src="img/services-2.png" alt="Services Image 1">
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article id="web-design" role="tabpanel" class="services-pane tab-pane">
+                <div class="row">
+                  <div class="col-sm-8 col-lg-7">
+                    <h3 class="services-pane__title">Modern Web Dev</h3>
+                    <div class="services-pane__content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, totam ad sint error porro. Vel officia vitae eveniet quam rem unde facilis.</p>
+                      <p>vitae eveniet quam rem unde facilis.</p>
+                    </div>
+                    <button class="button button--servies"><span class="plus-sign"></span>Know More</button>
+                  </div>
+                  <div class="col-sm-4  col-lg-5">
+                    <div class="services-pane__image">
+                      <img class="img-responsive" src="img/services-1.png" alt="Services Image 1">
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article id="web-dev" role="tabpanel" class="services-pane tab-pane">
+                <div class="row">
+                  <div class="col-sm-8 col-lg-7">
+                    <h3 class="services-pane__title">Modern Web Design</h3>
+                    <div class="services-pane__content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum totam ad sint error porro. Consectetur, sunt, aperiam. Magni rem optio distinctio illum consequuntur delectus nulla illo aperiam itaque cumque.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officia vitae eveniet quam rem unde facilis.</p>
+                      <p>vitae eveniet quam rem unde facilis.</p>
+                    </div>
+                    <button class="button button--servies"><span class="plus-sign"></span>Know More</button>
+                  </div>
+                  <div class="col-sm-4  col-lg-5">
+                    <div class="services-pane__image">
+                      <img class="img-responsive" src="img/services-2.png" alt="Services Image 1">
+                    </div>
+                  </div>
+                </div>
+              </article>
+
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="section-heading">
+              <h2 class="section-heading__text"><span>Frequently</span> Asked Questions</h2>
+              <p class="section-heading__subtext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <script src="js/main.js"></script>
