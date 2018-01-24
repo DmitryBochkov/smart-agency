@@ -1,8 +1,10 @@
 // bootstrap
 @import "bootstrap";
 
-//fontawesome
+//libs
 @import "fontawesome/font-awesome";
+@import "vendor/slick";
+@import "vendor/slick-theme";
 
 //base
 @import "fonts";
@@ -23,3 +25,5 @@
 @import "components/plus-sign";
 @import "components/works";
 @import "components/services";
+@import "components/faq";
+@import "components/feedback";
