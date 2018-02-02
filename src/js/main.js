@@ -11,6 +11,10 @@ $(document).ready(function() {
     slidesToShow: 2,
     slidesToScroll: 2,
     dots: true,
+    dotsClass: 'testimonial__dots',
+    arrows: true,
+    prevArrow: '<button class="testimonial__arrow prev"><i class="fa fa-chevron-left"></i></button>',
+    nextArrow: '<button class="testimonial__arrow next"><i class="fa fa-chevron-right"></i></button>',
     responsive: [
     {
       breakpoint: 768,
@@ -18,7 +22,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: true,
       }
     }]
   });
