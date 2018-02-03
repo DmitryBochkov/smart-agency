@@ -10069,3 +10069,38 @@ a.current {
     .testimonial__dots li.slick-active button {
       background-color: #fc6744;
       color: #fc6744; }
+
+.main-footer {
+  background-color: #f7f7f7; }
+
+.footer-top {
+  padding: 50px 0;
+  text-align: center; }
+
+.popup-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; }
+
+.popup {
+  width: 400px;
+  min-height: 400px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff; }
+
+.popup__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 50px;
+  color: #000;
+  text-decoration: none; }
