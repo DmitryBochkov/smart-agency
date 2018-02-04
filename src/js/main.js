@@ -1,3 +1,7 @@
+//= snap.svg-min.js
+//= main-svg.js
+
+
 $(document).ready(function() {
   var hamburger = document.querySelector(".hamburger");
   // On click
