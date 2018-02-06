@@ -10222,3 +10222,42 @@ Modal Window
   visibility: visible;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s; }
+
+@-webkit-keyframes move {
+  from {
+    margin-left: 0;
+    -webkit-border-radius: 50px;
+            border-radius: 50px; }
+  50% {
+    margin-left: 50px;
+    -webkit-border-radius: 0px;
+            border-radius: 0px; }
+  to {
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    margin-left: 150px; } }
+
+@keyframes move {
+  from {
+    margin-left: 0;
+    -webkit-border-radius: 50px;
+            border-radius: 50px; }
+  50% {
+    margin-left: 50px;
+    -webkit-border-radius: 0px;
+            border-radius: 0px; }
+  to {
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    margin-left: 150px; } }
+
+#test .box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3; }
