@@ -3,6 +3,8 @@
 
 
 $(document).ready(function() {
+  new WOW().init();
+
   var hamburger = document.querySelector(".hamburger");
   // On click
   hamburger.addEventListener("click", function() {

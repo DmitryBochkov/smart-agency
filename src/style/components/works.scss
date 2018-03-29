@@ -1,7 +1,12 @@
 #works {
-  padding-top: 136px;
-  padding-bottom: 143px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: #fbfbfb;
+
+  @media (min-width: 768px) {
+    padding-top: 136px;
+    padding-bottom: 143px;
+  }
 }
 
 .work {

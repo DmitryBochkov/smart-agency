@@ -4,11 +4,16 @@
 }
 
 .section-heading__text {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 0.92;
+  line-height: 1.1;
   color: $black;
   opacity: 0.8;
+
+  @media (min-width: 768px) {
+    font-size: 50px;
+    line-height: 0.92;
+  }
 
   span {
     color: $accent;
