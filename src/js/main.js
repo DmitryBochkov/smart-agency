@@ -32,4 +32,19 @@ $(document).ready(function() {
       }
     }]
   });
+
+  $('#main-form-ajax').submit(function() {
+    $.ajax({
+      url: 'mail.php',
+      type: 'POST',
+      data: $(this).serialize()
+    })
+    .done(function() {
+      $(this).find('.form-control').val('');
+      // alert('Thanks for the request');
+      $('#modal-thanks').modal('show');
+      $('#main-form-ajax').trigger('reset');
+    });
+    return false;
+  });
 });

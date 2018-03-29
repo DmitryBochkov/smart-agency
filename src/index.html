@@ -44,10 +44,12 @@
           <div class="col-sm-6 col-lg-4">
             <div class="meassage-form">
               <h3 class="meassage-form__title"><span>Send</span> A Message</h3>
-              <form action="#">
-                <input type="text" class="form-control" placeholder="Your Name">
-                <input type="email" class="form-control" placeholder="Your Email">
-                <textarea class="form-control" placeholder="Your Message"></textarea>
+              <!-- <form id="main-form" action="smart.php" method="post"> -->
+              <form id="main-form-ajax" action="#">
+                <input type="hidden" name="main-form" value="Main Form">
+                <input type="text" class="form-control" name="username" placeholder="Your Name">
+                <input type="email" class="form-control" name="email" placeholder="Your Email">
+                <textarea class="form-control" name="message" placeholder="Your Message"></textarea>
                 <button type="submit" class="button button--accent">
                   Send Message
                   <span class="right-arrow">&rarr;</span>
