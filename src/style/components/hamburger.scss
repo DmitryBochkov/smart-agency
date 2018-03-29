@@ -9,5 +9,18 @@ $hamburger-hover-opacity                   : 0.8;
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
 
 .hamburger {
+  position: relative;
   float: right;
+  z-index: 9999;
+
+  &.is-active {
+    .hamburger-inner {
+      background-color: #fff;
+      &:before,
+      &:after {
+        background-color: #fff;
+      }
+    }
+
+  }
 }

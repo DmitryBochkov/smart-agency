@@ -3,15 +3,27 @@
 
 
 $(document).ready(function() {
+  // wow animation
   new WOW().init();
 
+  // hamburger
   var hamburger = document.querySelector(".hamburger");
   // On click
-  hamburger.addEventListener("click", function() {
+  hamburger.addEventListener("click", function(e) {
    // Toggle class "is-active"
+   e.preventDefault();
    hamburger.classList.toggle("is-active");
+   $('.nav-overlay').toggleClass('open');
+
   });
 
+  // menu
+  // hamburger.on('click', function(event) {
+  //   event.preventDefault();
+  //
+  // });
+
+  // slick slider
   $('#feedback-slider').slick({
     infinite: true,
     slidesToShow: 2,
@@ -33,6 +45,7 @@ $(document).ready(function() {
     }]
   });
 
+// form submission
   $('#main-form-ajax').submit(function() {
     $.ajax({
       url: 'mail.php',

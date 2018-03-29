@@ -27,6 +27,26 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
+
+          <div class="nav-overlay">
+            <ul class="top-nav__menu">
+              <li class="top-nav__item">
+                <a href="#">Main</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#">About</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#">Map</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="container">
@@ -46,8 +66,8 @@
               <h3 class="meassage-form__title"><span>Send</span> A Message</h3>
               <!-- <form id="main-form" action="smart.php" method="post"> -->
               <form id="main-form-ajax" action="#">
-                <input type="hidden" name="main-form" value="Main Form">
-                <input type="text" class="form-control" name="username" placeholder="Your Name">
+                <input type="hidden" name="main-form" value="Main Form" required>
+                <input type="text" class="form-control" name="username" placeholder="Your Name" required>
                 <input type="email" class="form-control" name="email" placeholder="Your Email">
                 <textarea class="form-control" name="message" placeholder="Your Message"></textarea>
                 <button type="submit" class="button button--accent">

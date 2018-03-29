@@ -27,6 +27,26 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
+
+          <div class="nav-overlay">
+            <ul class="top-nav__menu">
+              <li class="top-nav__item">
+                <a href="#">Main</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#">About</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#">Map</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="top-nav__item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="container">
@@ -44,10 +64,12 @@
           <div class="col-sm-6 col-lg-4">
             <div class="meassage-form">
               <h3 class="meassage-form__title"><span>Send</span> A Message</h3>
-              <form action="#">
-                <input type="text" class="form-control" placeholder="Your Name">
-                <input type="email" class="form-control" placeholder="Your Email">
-                <textarea class="form-control" placeholder="Your Message"></textarea>
+              <!-- <form id="main-form" action="smart.php" method="post"> -->
+              <form id="main-form-ajax" action="#">
+                <input type="hidden" name="main-form" value="Main Form" required>
+                <input type="text" class="form-control" name="username" placeholder="Your Name" required>
+                <input type="email" class="form-control" name="email" placeholder="Your Email">
+                <textarea class="form-control" name="message" placeholder="Your Message"></textarea>
                 <button type="submit" class="button button--accent">
                   Send Message
                   <span class="right-arrow">&rarr;</span>
@@ -595,6 +617,23 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Thanks for the request</h4>
+          </div>
+          <div class="modal-body">
+            Thanks for the request
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
